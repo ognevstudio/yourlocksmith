@@ -1,0 +1,98 @@
+// ------------------------------
+
+// -- Title Font
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+$title-font-family: "Work Sans", sans-serif;
+
+// -- Text Font
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Work+Sans&display=swap');
+$text-font-family: "Roboto", sans-serif;
+;
+
+// ------------------------------
+
+// -- Text Styles
+.h1 {
+	font-family: $title-font-family;
+	@include av('font-size', 44, 30, $maxSW, $minSW);
+	line-height: 120%;
+	letter-spacing: -1px;
+	font-weight: 700;
+	font-style: normal;
+	text-transform: uppercase;
+
+	color: $txt-primary;
+}
+
+.h2 {
+	font-family: $title-font-family;
+	@include av('font-size', 36, 28, $maxSW, $minSW);
+	line-height: 120%;
+	letter-spacing: -1px;
+	text-transform: uppercase;
+	font-weight: 700;
+
+	color: $txt-primary;
+}
+
+.h3 {
+	font-family: $title-font-family;
+	@include av('font-size', 28, 22, $maxSW, $minSW);
+	line-height: 120%;
+	letter-spacing: 0px;
+	text-transform: uppercase;
+	font-weight: 700;
+
+	color: $txt-primary;
+}
+
+.h4 {
+	font-family: $title-font-family;
+	font-size: 17px;
+	line-height: 120%;
+	letter-spacing: 0px;
+	text-transform: uppercase;
+	font-weight: 700;
+
+	color: $txt-primary;
+}
+
+.h5 {
+	font-family: $title-font-family;
+	font-size: 14px;
+	line-height: 120%;
+	letter-spacing: 0px;
+	text-transform: uppercase;
+	font-weight: 600;
+
+	color: $txt-primary;
+}
+
+.text {
+	font-family: $text-font-family;
+	font-size: 17px;
+	line-height: 140%;
+	letter-spacing: 0%;
+
+	color: $txt-primary;
+}
+
+.bold-text {
+	font-family: $text-font-family;
+	font-size: 17px;
+	font-weight: 800;
+	line-height: 140%;
+	letter-spacing: 0%;
+
+	color: $txt-primary;
+}
+
+.small-text {
+	font-family: $text-font-family;
+	font-size: 12px;
+	line-height: 150%;
+	letter-spacing: 1%;
+
+	color: $txt-primary;
+
+}

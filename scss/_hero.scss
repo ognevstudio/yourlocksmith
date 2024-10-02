@@ -1,0 +1,78 @@
+.hero {}
+
+.hero__content {
+	display: grid;
+	@include av('gap', $g3, $g2, $maxSW, $minSW);
+	grid-template-columns: 1fr 1fr;
+
+	@media (max-width: px($s6)) {
+		grid-template-columns: 1fr;
+	}
+}
+
+.hero__body {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.hero__title {
+	margin: px($g2) 0;
+}
+
+.hero__subtitle {
+	margin-bottom: px($g4);
+}
+
+.hero__offer {}
+
+.hero__btn {}
+
+.hero__numbers {}
+
+.numbers-list {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	@include av('gap', $g3, $g2, $maxSW, $minSW);
+
+	margin-top: px($g4);
+
+	@media (max-width: px($s2)) {
+		grid-template-columns: 1fr 1fr;
+
+		.numbers-list__li:last-child {
+			grid-column-start: 1;
+			grid-column-end: 3;
+		}
+	}
+}
+
+.numbers-list__li {}
+
+.number {
+	padding: px($g2) px($g3);
+	border: 1px solid $main-secondary-light;
+	border-radius: px($g2);
+	text-align: center;
+}
+
+.number__title {
+	color: $txt-primary-light;
+}
+
+.number__subtitle {
+	color: $txt-primary-light;
+}
+
+.hero__img {
+	width: 100%;
+	height: 100%;
+	max-height: px($i10);
+
+	object-fit: cover;
+	border-radius: 20px;
+
+	@media (max-width: px($s6)) {
+		height: px($i8);
+	}
+}

@@ -1,0 +1,24 @@
+.container {
+	max-width: px($maxSW);
+	margin: 0px auto;
+	padding-left: px($g3);
+	padding-right: px($g3);
+
+	@media (max-width: px($s3)) {
+		padding-left: px($g2);
+		padding-right: px($g2);
+	}
+}
+
+.header {
+	width: 100%;
+	position: fixed;
+}
+
+.main {
+	@include av('padding-top', $g6, $g5, $maxSW, $minSW);
+}
+
+section {
+	@include av('padding-top', $g8, $g7, $maxSW, $minSW);
+}

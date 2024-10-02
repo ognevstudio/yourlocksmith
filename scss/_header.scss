@@ -1,0 +1,20 @@
+.header {
+	z-index: 100;
+	background-color: $main-primary;
+}
+
+.header__container {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	justify-content: space-between;
+	padding-top: px($g2);
+	padding-bottom: px($g2);
+}
+
+.logo {
+	@include av('width', 165, 120, $maxSW, $minSW);
+	@include av('height', 65, 50, $maxSW, $minSW);
+}
+
+.C-btn {}

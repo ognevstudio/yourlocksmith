@@ -1,0 +1,16 @@
+.C-btn {
+	display: inline-block;
+	padding: px($g2) px($g3);
+
+	font-family: $text-font-family;
+	font-size: 17px;
+	line-height: 140%;
+	width: auto;
+	text-wrap: nowrap;
+
+	letter-spacing: 0%;
+
+	border-radius: px($g2);
+	color: $txt-secondary;
+	background-color: $main-secondary;
+}
