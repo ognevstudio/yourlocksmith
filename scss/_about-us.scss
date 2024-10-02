@@ -1,0 +1,47 @@
+.about-us {}
+
+.about-us__content {
+	display: grid;
+	@include av('gap', $g3, $g2, $maxSW, $minSW);
+	grid-template-columns: 1fr 1fr;
+
+	@media (max-width: px($s6)) {
+		grid-template-columns: 1fr;
+	}
+}
+
+.about-us__body {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.about-us__title {
+	margin: px($g2) 0;
+
+	@media (max-width: px($s6)) {
+		margin-top: 0;
+	}
+}
+
+.about-us__text {
+	display: block;
+	margin-bottom: px($g2);
+}
+
+.about-us__offer {}
+
+.about-us__btn {}
+
+.about-us__img {
+	width: 100%;
+	height: 100%;
+	max-height: px($i10);
+
+	object-fit: cover;
+	@include av('border-radius', $g3, $g2, $maxSW, $minSW);
+
+	@media (max-width: px($s6)) {
+		height: px($i7);
+	}
+}

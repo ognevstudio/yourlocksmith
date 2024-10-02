@@ -1,6 +1,8 @@
 .header {
 	z-index: 100;
 	background-color: $main-primary;
+
+	border-bottom: 2px solid $main-secondary;
 }
 
 .header__container {

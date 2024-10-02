@@ -7,6 +7,10 @@
 
 	@media (max-width: px($s6)) {
 		grid-template-columns: 1fr;
+
+		.hero__title {
+			margin: px($g2) 0;
+		}
 	}
 }
 
@@ -18,6 +22,10 @@
 
 .hero__title {
 	margin: px($g2) 0;
+
+	@media (max-width: px($s6)) {
+		margin-top: 0;
+	}
 }
 
 .hero__subtitle {
@@ -70,9 +78,9 @@
 	max-height: px($i10);
 
 	object-fit: cover;
-	border-radius: 20px;
+	@include av('border-radius', $g3, $g2, $maxSW, $minSW);
 
 	@media (max-width: px($s6)) {
-		height: px($i8);
+		height: px($i7);
 	}
 }

@@ -1,0 +1,50 @@
+.reviews {}
+
+.container {}
+
+.reviews__content {}
+
+.reviews__title {
+	margin-bottom: px($g2);
+}
+
+.reviews__list {}
+
+.reviews-list {
+	@include av('margin-bottom', $g3, $g2, $maxSW, $minSW);
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	@include av('gap', $g3, $g2, $maxSW, $minSW);
+
+	@media (max-width: px($s6)) {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	@media (max-width: px($s2)) {
+		grid-template-columns: 1fr;
+
+		&__li:last-child {
+			display: none;
+		}
+	}
+}
+
+.reviews-list__li {}
+
+.review {
+	width: 100%;
+	padding: px($g2) px($g3);
+	border: 1px solid $main-secondary-light;
+	border-radius: px($g2);
+	text-align: start;
+}
+
+.review__text {
+	margin-bottom: px($g2);
+}
+
+.text {}
+
+.review__author {
+	color: $txt-primary-light;
+}
